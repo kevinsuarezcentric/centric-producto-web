@@ -1,0 +1,89 @@
+{
+  "TITULO": {
+    "NUEVO": "Nuevo",
+    "VER": "Ver",
+    "EDITAR": "Editar",
+    "FILTROS": "Filtros"
+  },
+  "BOTON": {
+    "LIMPIAR": "Limpiar",
+    "BUSCAR": "Buscar",
+    "CANCELAR": "Cancelar"
+  },
+  "TABLE_PROPERTIES" : {
+    "NO_RECORDS_FOUND": "No hay registros.",
+    "ROWS_PER_PAGE_OPTIONS": [10, 20, 50],
+    "ROWS_NUMBER": 10,
+    "PAGE_LINK_SIZE": 3
+  },
+  "MENSAJE": {
+    "ERROR": {
+      "ERROR": "Ha ocurrido un error.",
+      "PROCESS": "Ha ocurrido un error en el proceso, por favor intente mas tarde.",
+      "REQUIRED": "Campo es obligatorio.",
+      "PATTERN": "Campo no cumple con el formato.",
+      "MAXLENGTH": "Campo no cumple con el límite máximo."
+    },
+    "OK": {
+      "SUCCESS": "Operación exitosa.",
+      "UPDATE": "El registro ha sido actualizado correctamente.",
+      "SAVE": "El registro ha sido guardado correctamente.",
+      "DELETE": "El registro ha sido eliminado correctamente.",
+      "DOWNLOAD": "El documento ha sido descargado correctamente."
+    },
+    "CONFIRMATION_DELETE": "¿Desea eliminar el registro <b>{registro}</b> ?",
+    "USER_ROLE_ERROR": "El cliente no tiene el perfil completo. Por favor comuníquese con Centric."
+  },
+  "MAT_TOOLTIP": {
+    "EDITAR": "Editar",
+    "CANCELAR": "Cancelar",
+    "VER": "Ver",
+    "ELIMINAR": "Eliminar",
+    "CREAR_NUEVO_REGISTRO": "Crear nuevo registro",
+    "DESCARGAR_REPORTE": "Descargar reporte"
+  },
+  "COLUMNA": {
+    "ACCION": "Acción"
+  },
+  "COMPANIA": {
+    "TITULO_COMPANIAS": "Compañias",
+    "FILTRO_CODIGO": "Código",
+    "FILTRO_COMPANIA": "Compañia",
+    "FILTRO_NUMERO_PATRONAL": "Número patronal",
+    "TITULO_LISTA_COMPANIAS": "Lista de compañias",
+    "COLUMNA_CODIGO": "Código",
+    "COLUMNA_COMPANIA": "Compañia",
+    "COLUMNA_DIRECCION": "Dirección",
+    "COLUMNA_RUC": "Ruc",
+    "SUBTITULO_COMPANIAS": "Información compañias",
+    "FORM_CODIGO": "Código",
+    "FORM_COMPANIA": "Compañia",
+    "FORM_DIRECCION": "Dirección",
+    "FORM_RUC": "Ruc",
+    "FORM_TELEFONO": "Teléfono",
+    "FORM_CLASE_CAMBIO": "Clase de Cambio",
+    "FORM_DIARIO_MOVIMIENTO": "Diario de movimiento",
+    "FORM_APLICA_LEY": "Aplica la ley de",
+    "FORM_NUMERO_PATRONAL": "Número patronal",
+    "FORM_SALARIO_MINIMO_NACIONAL": "Salario mínimo nacional",
+    "FORM_DIA_MAX_HORAS_EXTRAS": "Día max horas extras",
+    "FORM_INGRESO_DECIMO3": "Ingreso decimo 3",
+    "FORM_INGRESO_DECIMO4": "Ingreso decimo 4",
+    "FORM_BANCO_PAGO": "Banco de pago",
+    "FORM_FORMATO_TRANSFERENCIA": "Formato para transferencia",
+    "SUBTITULO_COMISION_CORPORATIVA": "Comisión corporativa",
+    "FORM_INGRESO_COMISION_CORPORATIVA": "Ingreso comisión corporativa",
+    "FORM_COMISION_SUELDO_BASICO": "% Comisión sueldo básico",
+    "FORM_COMISION_ISC": "% Comisión ISC",
+    "FORM_COMISION_UTILIDAD": "% Comisión utilidad",
+    "FORM_PAGA_COMISION_POR": "Paga comisión por",
+    "SUBTITULO_REPRESENTANTE_LEGAL": "Representante legal",
+    "FORM_CEDULA": "Cédula",
+    "FORM_APELLIDO_PATERNO": "Apellido paterno",
+    "FORM_APELLIDO_MATERNO": "Apellido materno",
+    "FORM_NOMBRES": "Nombres",
+    "SUBTITULO_LIMITES_IMPUESTO_RENTA": "Limites impuesto a la renta",
+    "FORM_MINIMO": "Mínimo",
+    "FORM_MAXIMO": "Máximo "
+  }
+}

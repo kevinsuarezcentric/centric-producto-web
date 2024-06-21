@@ -1,0 +1,11 @@
+<h2 class="font-medium" mat-dialog-title>
+  <strong>{{ action }}</strong>
+</h2>
+
+<h2 class="font-medium" mat-dialog-content>
+  <p [innerHTML]="msgConfirmationMessage"></p>
+</h2>
+<div mat-dialog-actions align="center" class="pt-3">
+  <button mat-button (click)="onNoClick()">{{'BOTON.CANCELAR'| translate}}</button>
+  <button mat-button (click)="onConfirm()" mat-flat-button color="warn">{{ action }}</button>
+</div>

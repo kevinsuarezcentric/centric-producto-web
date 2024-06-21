@@ -1,0 +1,31 @@
+<mat-card class="cardWithShadow">
+  <mat-card-content class="p-10">
+    <div class="row justify-content-between">
+      <!-- seccion title -->
+      <div class="col-lg-4">
+        <mat-card-title class="text-black">{{pageTitle | translate}}</mat-card-title>
+      </div>
+      <!-- seccion title -->
+
+      <!-- seccion header -->
+      <div class="col-lg-4 d-flex align-items-center justify-content-end">
+        <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>
+      </div>
+      <!-- seccion header -->
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<div class="row">
+  <!-- seccion filtros -->
+  <div class="col-lg-3">
+    <ng-container *ngTemplateOutlet="sidebarTemplate"></ng-container>
+  </div>
+  <!-- seccion filtros -->
+
+  <!-- seccion tabla -->
+  <div [class]="!!sidebarTemplate ? 'col-lg-9' : 'col-lg-12'">
+    <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
+  </div>
+  <!-- seccion tabla -->
+</div>

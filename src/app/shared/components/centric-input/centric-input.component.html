@@ -1,0 +1,16 @@
+<div class="col-sm-12 d-flex align-items-center">
+  <mat-label class="mat-subtitle-2 f-w-600 d-block m-b-16">{{ label | translate}} <span *ngIf="required">*</span>:</mat-label>
+</div>
+<div class="col-sm-12">
+  <mat-form-field appearance="outline" class="w-100">
+    <input matInput [readonly]="readonly" placeholder="Ingrese {{ label | translate}}" [formControl]="getControl()" (click)="onclick($event)"/>
+
+    <button *ngIf="showButtonSearch" mat-icon-button matSuffix (click)="searchEventClick($event)" [attr.aria-label]="'Hide password'">
+      <i-tabler name="search" class="icon-20 d-flex"></i-tabler>
+    </button>
+
+    <mat-error *ngIf="isRequiredFieldInvalid()">{{ 'MENSAJE.ERROR.REQUIRED' | translate }}</mat-error>
+    <mat-error *ngIf="isPatternFieldInvalid()">{{ 'MENSAJE.ERROR.PATTERN' | translate }}</mat-error>
+    <mat-error *ngIf="isMaxFieldInvalid()">{{ 'MENSAJE.ERROR.MAXLENGTH' | translate }}</mat-error>
+  </mat-form-field>
+</div>

@@ -1,0 +1,38 @@
+
+.user-profile {
+  &.profile-bar {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .profile-info {
+    display: flex;
+    align-items: center;
+
+    .profile-img {
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    .user-details {
+      margin-left: 10px;
+
+      .user-name,
+      .user-email {
+        margin: 0;
+        color: white;
+      }
+
+      .user-name {
+        font-weight: bold;
+      }
+
+      .user-email {
+        font-size: 0.9em;
+        opacity: 0.8;
+      }
+    }
+  }
+
+}

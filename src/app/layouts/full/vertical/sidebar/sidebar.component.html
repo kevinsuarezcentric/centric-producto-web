@@ -1,0 +1,47 @@
+<div class="flex">
+  <div class="user-profile profile-bar" style="background: url(assets/images/backgrounds/user-info.jpg) no-repeat">
+    <!-- User profile image -->
+    <div class="profile-info d-flex align-items-center">
+      <div class="profile-img">
+        <img src="assets/images/profile/profile.png" alt="user" width="50" class="rounded-circle" />
+      </div>
+      <div class="user-details ml-3" style="margin-left: 20px;">
+        <p class="user-name mb-0">Kevin Suarez</p>
+        <p class="user-email mb-0">MATRIZ CENTRIC</p>
+      </div>
+    </div>
+
+    <!-- User profile information -->
+
+
+    <!-- User profile text-->
+    <!-- ============================================================== -->
+    <!-- Profile - style you can find in header.scss -->
+    <!-- ============================================================== -->
+    <div class="profile-text">
+      <a [matMenuTriggerFor]="sdprofile" class="d-flex align-items-center text-white w-100 f-s-16">
+        Nomina
+        <i-tabler name="chevron-down" class="icon-18 m-l-auto"></i-tabler>
+      </a>
+    </div>
+    <mat-menu #sdprofile="matMenu" xPosition="after" class="cardWithShadow profile-dd">
+      <button mat-menu-item>
+        <mat-icon class="d-flex align-items-center"><i-tabler name="users" class="icon-18 d-flex"></i-tabler></mat-icon>
+        Nomina
+      </button>
+      <button mat-menu-item>
+        <mat-icon class="d-flex align-items-center"><i-tabler name="brand-ubuntu"
+            class="icon-18 d-flex"></i-tabler></mat-icon>
+        Sistemas
+      </button>
+      <button mat-menu-item>
+        <mat-icon class="d-flex align-items-center"><i-tabler name="file-invoice"
+            class="icon-18 d-flex"></i-tabler></mat-icon>
+        Contabilidad
+      </button>
+      <a mat-menu-item [routerLink]="['/authentication/side-login']"><mat-icon
+          class="d-flex align-items-center"><i-tabler name="user" class="icon-18 d-flex"></i-tabler></mat-icon>
+        Recursos humanos</a>
+    </mat-menu>
+  </div>
+</div>
