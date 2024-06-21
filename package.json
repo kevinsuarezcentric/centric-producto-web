@@ -23,6 +23,7 @@
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
     "angular-tabler-icons": "^2.47.0",
+    "ng-block-ui": "^4.0.1",
     "ngx-scrollbar": "^11.0.0",
     "rxjs": "~7.8.0",
     "sass": "^1.57.1",

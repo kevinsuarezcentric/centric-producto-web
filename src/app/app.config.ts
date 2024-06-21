@@ -6,17 +6,20 @@ import { routes } from './app.routes';
 import { MaterialModule } from './material.module';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Icons
 import { TablerIconsModule } from 'angular-tabler-icons';
 import * as TablerIcons from 'angular-tabler-icons/icons';
+import { InterceptedHttp } from './shared/interceptor/intercepted.http';
 
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
+
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -35,7 +38,13 @@ export const appConfig: ApplicationConfig = {
           deps: [HttpClient],
         },
       }),
-    )
+    ),
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: InterceptedHttp,
+      deps: [],
+      multi: true,
+    },
   ]
 };
 
